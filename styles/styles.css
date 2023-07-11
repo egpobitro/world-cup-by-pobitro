@@ -6,52 +6,59 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Top Banner Section Start */
-.container {
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.banner-section {
-    padding-top: 112px;
-    padding-left: 106px;
-    padding-right: 76px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+/* Banner Section Start  */
+.container {
+    width: 1321px;
+    margin-bottom: 130px;
+    display: flex;
+}
+
+.banner {
     background-color: #161616;
+    display: flex;
+    justify-content: center;
     border-radius: 20px;
+    height: 646px;
 }
 
-.top-text-area h1 {
-    width: 531px;
+.text-area {
+    padding-left: 106px;
+    color: #FFF;
+}
+
+.text-area h1 {
     color: #FFF;
     font-size: 70px;
     font-weight: 700;
-    line-height: 80px;
+    width: 531px;
+    margin-bottom: 20px;
 }
 
-.top-text-area p {
+.text-area p {
     color: #FFF;
-    margin-bottom: 40px;
     font-size: 16px;
     font-weight: 400;
     width: 506px;
+    margin-bottom: 30px;
 }
 
-.top-image-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.immage-banner {
+    padding-right: 79px;
 }
 
-.top-image-area img {
-    width: 581px;
-    height: 613px;
+.immage-banner img {
+    height: 100%;
 }
 
 .button a {
+    text-decoration: none;
     width: 187px;
     height: 56px;
     padding: 10px 10px;
@@ -63,4 +70,125 @@ body {
     font-weight: 400;
 }
 
-/* Top Banner Section End  */
+/* Banner Section End  */
+
+
+/* Blog Section Start  */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    width: 312px;
+    height: 312px;
+    border-radius: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 252px;
+    height: 64px;
+    background-color: #FFF;
+    border-radius: 10px;
+    color: #161616;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px;
+}
+
+#live-button {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #D00;
+}
+
+.blog-area {
+    margin-left: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+
+.blog-post {
+    width: 312px;
+    height: 362px;
+}
+
+.blog-post img {
+    width: 312px;
+    height: 175px;
+}
+
+.blog-post h4 {
+    border-radius: 5px;
+    padding: 4 16 4 16;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    width: 100px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-post p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 16px 20px 20px 20px;
+    width: 272px;
+    height: 54px;
+}
+
+.blog-post span {
+    margin-top: 0px;
+}
+
+#icon-comments {
+    padding-left: 20px;
+    display: flex;
+}
+
+#icon-1stPart {
+    margin-right: 30px;
+}
+
+.fa-regular {
+    padding-right: 10px;
+}
+
+
+/* Blog Section End  */
+
+/* Footer Start */
+
+footer {
+    width: 100%;
+    height: 444px;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+footer a {
+    text-decoration: none;
+    color: #B9B9B9;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Footer End */
